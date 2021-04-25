@@ -1,4 +1,7 @@
 <?php
+
+//Git hub link https://github.com/rashrest/dating
+
 ini_set('display_errors',1);
 error_reporting(E_ALL);
 
