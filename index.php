@@ -16,5 +16,5 @@ $f3->route('GET /',function (){
     echo $view-> render('view/home.html');
 });
 
-//Run Fat-Free
+//Run Fat-Free /Fat free
 $f3->run();
