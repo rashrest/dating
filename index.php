@@ -16,8 +16,41 @@ $f3=Base::instance();
 $f3->route('GET /',function (){
     //Display the home page
     $view = new Template();
-    echo $view-> render('view/home.html');
+    echo $view-> render('views/home.html');
 });
+
+//define route to personal page
+$f3->route('GET|POST /Personal',function (){
+
+    //Display the personal information form
+    $view = new Template();
+    echo $view-> render('views/personalForm.html');
+});
+
+//define route to Profile page
+$f3->route('GET /Profile',function (){
+
+    //Display the personal information form
+    $view = new Template();
+    echo $view-> render('views/profile.html');
+});
+
+//define route to personal page
+$f3->route('GET /Interest',function (){
+
+    //Display the personal information form
+    $view = new Template();
+    echo $view-> render('views/interests.html');
+});
+
+//define route to personal page
+$f3->route('GET /Summary',function (){
+
+    //Display the personal information form
+    $view = new Template();
+    echo $view-> render('views/summary.html');
+});
+
 
 //Run Fat-Free /Fat free
 $f3->run();
